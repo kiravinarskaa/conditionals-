@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Characher encoding -->
+<meta charset="UTF-8">
+<title>JavaScript For Loop Example</title>
+
+<style>
+/* Style for whole page  */
+    body{ 
+        font-family: Arial, sans-serif;
+        background:#f4f6f9;
+        padding:30px;
+    }
+/* Main content box */
+    .box{
+        background:white;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+        max-width:700px;
+        margin:auto;
+    }
+/* Heading style */
+    h1{
+        color:#0077cc;
+        text-align:center;
+    }
+/* Code area style */
+    pre{
+        background:#eeeeee;
+        padding:15px;
+        border-radius:5px;
+    }
+/* Output result box */
+    .output{
+        margin-top:15px;
+        padding:10px;
+        background:#e8f5e9;
+        border-radius:5px;
+    }
+</style>
+</head>
+<body>
+
+  <!-- Main container -->
+<div class="box">
+
+    <!-- Heading -->
+    <h1>JavaScript For Loop</h1>
+
+    <p><b>Explanation:</b></p>
+
+    <p>
+        A <b>for loop</b> is used when we want to repeat code many times. <br>
+        It runs until the condition becomes false.
+    </p>
+
+    <!-- Example -->
+    <h3>Example Code:</h3>
+
+<pre>
+for(let i = 1; i <= 5; i++)
+{
+   document.write(i);
+}
+</pre>
+
+    <!-- Output -->
+    <h3>Output:</h3>
+
+    <!-- Result appears here -->
+    <div class="output" id="result"></div>
+
+</div>
+
+<script>
+
+// Create loop variable i
+// Start from 1
+// Continue while i <= 5
+// Increase by 1 each time
+
+for(let i = 1; i <= 5; i++)
+{
+   // Show numbers inside output box
+   document.getElementById("result").innerHTML += i + " ";
+}
+
+</script>
+
+</body>
+</html>

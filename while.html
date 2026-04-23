@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Characher encoding -->
+<meta charset="UTF-8">
+<title>JavaScript While Example</title>
+<style>
+
+/* Whole page style */
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    padding:30px;
+}
+
+/* Main content box */
+.box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    max-width:700px;
+    margin:auto;
+}
+
+/* Heading style */
+h1{
+    color:#0077cc;
+    text-align:center;
+}
+
+/* Code area */
+pre{
+    background:#eeeeee;
+    padding:15px;
+    border-radius:5px;
+}
+
+/* Output box */
+.output{
+    margin-top:15px;
+    padding:10px;
+    background:#e8f5e9;
+    border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <!-- Title -->
+    <h1>JavaScript While Loop</h1>
+    <p><b>Explanation:</b></p>
+
+    <p>
+        A <b>while loop</b> repeats code while the condition is true. <br>
+        First it checks the condition, then runs the code.
+    </p>
+    <h3>Example Code:</h3>
+
+<pre>
+let i = 1;
+let text = "";
+
+while(i <= 5)
+{
+   text += "&lt;br&gtThe number is " + i;
+   i++;
+}
+</pre>
+
+    <!-- Output -->
+    <h3>Output:</h3>
+
+    <!-- Result shown here -->
+    <div class="output" id="result"></div>
+
+</div>
+
+<script>
+
+// Create variable
+let i = 1;
+
+// Empty text variable
+let text = "";
+
+// Check condition first
+while(i <= 5)
+{
+   // Add line to text
+   text += "<br>The number is " + i;
+
+   // Increase number by 1
+   i++;
+}
+
+// Show result in HTML box
+document.getElementById("result").innerHTML = text;
+
+</script>
+
+</body>
+</html>

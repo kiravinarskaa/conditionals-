@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Browser title -->
+<title>JavaScript Break Statement</title>
+
+<style>
+
+/* Whole page style */
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    padding:30px;
+}
+
+/* Main box */
+.box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    max-width:700px;
+    margin:auto;
+}
+
+/* Heading style */
+h1{
+    color:#0077cc;
+    text-align:center;
+}
+
+/* Code area */
+pre{
+    background:#eeeeee;
+    padding:15px;
+    border-radius:5px;
+}
+
+/* Output box */
+.output{
+    margin-top:15px;
+    padding:10px;
+    background:#e8f5e9;
+    border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <!-- Title -->
+    <h1>JavaScript Break Statement</h1>
+
+    <!-- Explanation -->
+    <p><b>Explanation:</b></p>
+
+    <p>
+        The <b>break</b> statement is used to stop a loop immediately. <br>
+        When JavaScript finds <b>break</b>, the loop ends.
+    </p>
+
+    <!-- Example -->
+    <h3>Example Code:</h3>
+
+<pre>
+let i = 1;
+let text = "";
+
+while(i <= 5)
+{
+   if(i == 4)
+   {
+      break;
+   }
+
+   text += "The number is " + i + "&lt;br&gt;";
+   i++;
+}
+</pre>
+
+    <!-- Output -->
+    <h3>Output:</h3>
+
+    <!-- Result shown here -->
+    <div class="output" id="result"></div>
+
+</div>
+
+<script>
+
+// Starting number
+let i = 1;
+
+// Empty text variable
+let text = "";
+
+// Loop while condition is true
+while(i <= 5)
+{
+   // Stop loop when i becomes 4
+   if(i == 4)
+   {
+      break;
+   }
+
+   // Add text to output
+   text += "The number is " + i + "<br>";
+
+   // Increase number
+   i++;
+}
+
+// Show result
+document.getElementById("result").innerHTML = text;
+
+</script>
+
+</body>
+</html>

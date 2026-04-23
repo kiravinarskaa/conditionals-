@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Characher encoding -->
+<meta charset="UTF-8">
+<title>JavaScript Do While LoopExample</title>
+
+<style>
+/* Style for whole page  */
+    body{ 
+        font-family: Arial, sans-serif;
+        background:#f4f6f9;
+        padding:30px;
+    }
+/* Main content box */
+    .box{
+        background:white;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+        max-width:700px;
+        margin:auto;
+    }
+/* Heading style */
+    h1{
+        color:#0077cc;
+        text-align:center;
+    }
+/* Code area style */
+    pre{
+        background:#eeeeee;
+        padding:15px;
+        border-radius:5px;
+    }
+/* Output result box */
+    .output{
+        margin-top:15px;
+        padding:10px;
+        background:#e8f5e9;
+        border-radius:5px;
+    }
+</style>
+</head>
+<body>
+
+  <!-- Main container -->
+<div class="box">
+
+ <title>JavaScript Do While Loop</title>
+
+<body>
+
+<div class="box">
+
+    <!-- Title -->
+    <h1>JavaScript Do While Loop</h1>
+
+    <p><b>Explanation:</b></p>
+
+    <p>
+        A <b>do while loop</b> runs the code first, then checks the condition. <br>
+        It always runs at least one time.
+    </p>
+
+    <h3>Example Code:</h3>
+
+<pre>
+let i = 1;
+
+do
+{
+   document.write(i);
+   i++;
+}
+while(i <= 5);
+</pre>
+
+    <!-- Output -->
+    <h3>Output:</h3>
+
+    <!-- Result shown here -->
+    <div class="output" id="result"></div>
+
+</div>
+
+<script>
+
+// Create variable
+let i = 1;
+let text = "";
+
+// Run code first
+do
+{
+   // Add number to output box
+    text += "<br>The number is " + i;
+   // Increase value by 1
+    i++;
+}
+while(i <= 5);   // Check condition after running
+
+document.getElementById("result").innerHTML = text;
+
+</script>
+
+</body>
+</html>
